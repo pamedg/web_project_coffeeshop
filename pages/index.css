@@ -218,6 +218,7 @@
   max-width: 1600px;
   min-width: 1100px;
   background-size: cover;
+  padding: 100px 0 120px;
 }
 
 .reservation__title {
@@ -227,7 +228,8 @@
   font-size: 44px;
   line-height: 52px;
   display: block;
-  text-size-adjust: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 .form {
@@ -255,10 +257,7 @@
 
 .form__fieldset {
   border: none;
-}
-
-.form__input-container_ctrl_texts {
-  border: none;
+  padding: 0;
 }
 
 .form__label {
@@ -273,96 +272,33 @@
   display: block;
 }
 
-.form__item_name {
-  box-sizing: border-box;
-  width: 100%;
-  height: 60px;
-  margin-bottom: 32px;
-}
-
-.form__item_name::placeholder {
-  padding-left: 20px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: #838383;
-}
-
-.form__item_diners {
-  box-sizing: border-box;
-  width: 100%;
-  height: 60px;
-  margin-bottom: 32px;
-}
-
-.form__item_diners::placeholder {
-  padding-left: 20px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: #838383;
-}
-
-.form__item_dateandhour {
-  box-sizing: border-box;
-  width: 100%;
-  height: 60px;
-  margin-bottom: 32px;
-}
-
-.form__item_dateandhour::placeholder {
-  padding-left: 20px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: #838383;
-}
-
-.form__item_email {
-  box-sizing: border-box;
-  width: 100%;
-  height: 60px;
-  margin-bottom: 32px;
-}
-
-.form__item_email::placeholder {
-  padding-left: 20px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: #838383;
-}
-
 .form__input {
   border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 32px;
+  padding-left: 20px;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   color: #838383;
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
 }
 
-.form__input:focus {
-  box-sizing: border-box;
-  width: 100%;
+.form__input::placeholder {
+  padding-left: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
 }
 
 .form__button {
   border-radius: 4px;
-  max-width: 385px;
-  height: 60px;
   border: 0;
   line-height: 20px;
   background-color: #2f80ed;
@@ -378,14 +314,6 @@
   height: 60px;
 }
 
-.form__button:focus {
-  outline-color: #ffffff;
-}
-
-.form__button[type="submit"] {
-  background-color: #2f80ed;
-}
-
 .form__checkbox {
   border-radius: 2px;
   font-family: "Inter";
@@ -393,29 +321,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-}
-
-.form__handlers {
-  border: none;
-}
-
-.form__item_extra-option {
-  height: 20px;
-  width: 20px;
-  margin: 12px;
-}
-
-.form__label_direction_right {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  margin-right: 12px;
   margin-top: 32px;
+  max-width: 385px;
+  align-items: normal;
 }
 
-.form__label-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+.form__checkbox:outline {
+  justify-content: center;
 }
