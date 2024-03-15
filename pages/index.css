@@ -253,6 +253,7 @@
   margin: auto;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .form__fieldset {
@@ -313,6 +314,9 @@
   justify-content: center;
   height: 60px;
 }
+.form__button:hover {
+  opacity: 70%;
+}
 
 .form__checkbox {
   border-radius: 2px;
@@ -325,8 +329,4 @@
   margin-top: 32px;
   max-width: 385px;
   align-items: normal;
-}
-
-.form__checkbox:outline {
-  justify-content: center;
 }
