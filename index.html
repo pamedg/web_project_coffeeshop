@@ -8,7 +8,6 @@
     <meta name="description" content="Visita la cafeteria" />
     <title>Mi cafeteria</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,6 +33,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
     />
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
     <div class="page">
@@ -189,10 +189,138 @@
             </label>
           </form>
         </section>
-        <section class="menu" id="menu-link"></section>
-        <section class="about" id="about-link"></section>
+        <section class="menu" id="menu-link">
+          <h2 class="menu__title">Menú</h2>
+          <h3 class="menu__subtitle">
+            Elaboramos nuestro café con granos certificados de comercio justo,
+            tostados localmente y usamos tazas biodegradables. Todos los tés de
+            nuestra coleccion a $2/taza
+          </h3>
+          <div class="menu__cards">
+            <div class="card">
+              <p class="card__title">De filtro</p>
+              <ul class="card__content">
+                <li class="card__list-item">
+                  Regular(350ml) <span class="card__list-divider"></span>$1
+                </li>
+                <li class="card__list-item">
+                  Grande (470ml) <span class="card__list-divider"></span>$1.25
+                </li>
+                <li class="card__list-item">
+                  XL (590ml) <span class="card__list-divider"></span>$1.5
+                </li>
+                <li class="card__list-item">
+                  Tamaño familiar (700ml,descafeinado)
+                  <span class="card__list-divider"></span>$1.75
+                </li>
+                <li class="card__list-item">
+                  Café helado (470ml)
+                  <span class="card__list-divider"></span>$1.25
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <p class="card__title">Espresso</p>
+              <ul class="card__content">
+                <li class="card__list-item">
+                  Macchiato <span class="card__list-divider"></span>$2.25
+                </li>
+                <li class="card__list-item">
+                  Cortado <span class="card__list-divider"></span>$2.5
+                </li>
+                <li class="card__list-item">
+                  Mocha <span class="card__list-divider"></span>$3
+                </li>
+                <li class="card__list-item">
+                  Amanecer en Bay Area (descafeinado)
+                  <span class="card__list-divider"></span>$10
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <p class="card__title">Repostería</p>
+              <ul class="card__content">
+                <li class="card__list-item">
+                  Croissant de almendra
+                  <span class="card__list-divider"></span>$2
+                </li>
+                <li class="card__list-item">
+                  Pan de banana <span class="card__list-divider"></span>$1.75
+                </li>
+                <li class="card__list-item">
+                  Tarta de limon <span class="card__list-divider"></span>$3
+                </li>
+                <li class="card__list-item">
+                  Pastel Blue velvet
+                  <span class="card__list-divider"></span>$3.75
+                </li>
+                <li class="card__list-item">
+                  Cookie web <span class="card__list-divider"></span>$2
+                </li>
+                <li class="card__list-item">
+                  Baguette fresco
+                  <span class="card__list-divider"></span>$0.25
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="about-link">
+          <h2 class="about__title">Sobre la cafetería</h2>
+          <div class="about__content">
+            <p class="about__paragraph">
+              Nuestra cafetería se ubica en la Biblioteca Triple Peaks.
+            </p>
+            <p class="about__paragraph">
+              Nuestra principal misión es mantener a nuestros comensales cómodos
+              y con energía.
+            </p>
+            <p class="about__paragraph">
+              Además, buscamos reducir nuestro impacto ambiental, así que no
+              vendemos tazas de un solo uso.¡Pero puedes comprar una de nuestras
+              tazas reutilizables!
+            </p>
+          </div>
+          <div class="about__circle"></div>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__content">
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            al="a viwe inside logo"
+            class="footer__logo"
+          />
+          <div class="footer__social">
+            <h3 class="footer__social footer__social-heading">
+              Redes sociales
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/facebook_white.svg"
+                    alt="Facebook logo"
+                    class="footer__social-icon"
+                  />
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/instagram_white.svg"
+                    alt="Instagram logo"
+                    class="footer__social-icon"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">&copy;2024 Pamela Díaz</p>
+      </footer>
     </div>
   </body>
 </html>
